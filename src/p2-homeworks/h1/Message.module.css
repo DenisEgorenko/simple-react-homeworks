@@ -1,3 +1,83 @@
-.message {
+.messages{
+    background-color: #262626FF;
+    padding: 10px;
+}
 
+.messageBlock {
+    display: grid;
+    width: 300px;
+    grid-template-columns: auto auto;
+    margin: 20px;
+    align-items: end;
+}
+
+.avatar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+    object-fit: cover;
+}
+
+.message{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: end;
+}
+
+.sideFigure{
+    width: 20px;
+    flex: 0 0 65%;
+}
+
+.sideBottomPeace{
+    position: relative;
+    width: inherit;
+    height: 15px;
+}
+
+.sideCircle{
+    z-index: 1;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 0 0 100% ;
+    background-color: #262626FF;
+}
+
+.sidePeace{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    width: inherit;
+    height: inherit;
+    background-color: rgb(50, 71, 101);
+}
+
+.messageBody{
+    display: grid;
+    grid-template-rows: 25px auto 20px;
+    width: 300px;
+    height: auto;
+    background-color: #324765;
+    border-radius: 5px 5px 5px 0;
+
+}
+
+.messageBodyName{
+    font-weight: bold;
+    margin-top: 2px;
+    margin-left: 12px;
+    color: #e2bcff;
+}
+
+.messageBodyMessage{
+    margin: 0 12px 0 12px;
+    color: #ffffff;
+}
+
+.messageBodyTime{
+    font-size: 13px;
+    justify-self: right;
+    margin-right: 12px;
+    color: rgba(255, 255, 255, 0.4);
 }
