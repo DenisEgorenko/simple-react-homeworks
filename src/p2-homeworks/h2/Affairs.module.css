@@ -1,3 +1,37 @@
-.someClass {
+.active{
+    background-color: lightblue;
+}
 
+.item{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.name{
+    width: 110px;
+}
+
+.buttonBlock{
+    margin: 15px;
+}
+
+.priority{
+    width: 50px;
+}
+
+.deleteButton{
+    margin-left: 15px;
+}
+
+.high{
+    background-color: lightcoral;
+}
+
+.low{
+    background-color: lightgreen;
+}
+
+.middle{
+    background-color: lightgray;
 }
