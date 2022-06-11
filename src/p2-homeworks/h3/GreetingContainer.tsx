@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {ChangeEvent, useState} from 'react'
 import Greeting from './Greeting'
 
 type GreetingContainerPropsType = {
@@ -12,17 +12,28 @@ type GreetingContainerPropsType = {
 // более современный и удобный для про :)
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
-    const [name, setName] = useState<any>('') // need to fix any
-    const [error, setError] = useState<any>('') // need to fix any
+    const [name, setName] = useState<string>('') // need to fix any
+    const [error, setError] = useState<string>('') // need to fix any
 
-    const setNameCallback = (e: any) => { // need to fix any
-        setName('') // need to fix
+    const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
+        setName(e.currentTarget.value) // need to fix
     }
     const addUser = () => {
-        alert(`Hello  !`) // need to fix
+        if (name.trim().length !== 0) {
+            alert(`Hello ${name}!`)
+            addUserCallback(name)
+            setName('')
+        } else {
+            setError("Введите имя")
+        }
     }
 
-    const totalUsers = 0 // need to fix
+    const setErrorToNone = () => {
+        setError('')
+        setName('')
+    }
+
+    const totalUsers = users.length // need to fix
 
     return (
         <Greeting
@@ -31,6 +42,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
+            setErrorToNone = {setErrorToNone}
         />
     )
 }

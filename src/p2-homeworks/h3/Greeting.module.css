@@ -5,3 +5,20 @@
 .error {
     border: 1px solid red;
 }
+
+.input{
+    margin: 10px;
+}
+
+.errorMessage{
+    color: red;
+    margin-left: 10px;
+}
+
+.button{
+    width: 60px;
+}
+
+.counter{
+    margin-left: 10px;
+}
