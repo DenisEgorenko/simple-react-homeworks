@@ -1,9 +1,10 @@
-import React, {ChangeEvent, useState} from 'react'
+import React, {ChangeEvent, useState, KeyboardEvent} from 'react'
 import Greeting from './Greeting'
+import {UserType} from './HW3';
 
 type GreetingContainerPropsType = {
-    users: any // need to fix any
-    addUserCallback: any // need to fix any
+    users: UserType[] // need to fix any
+    addUserCallback: (name: string) => void // need to fix any
 }
 
 // более простой и понятный для новичков
@@ -24,13 +25,20 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             addUserCallback(name)
             setName('')
         } else {
-            setError("Введите имя")
+            setError('Введите имя')
         }
     }
 
     const setErrorToNone = () => {
         setError('')
         setName('')
+    }
+
+    const onEnter = (e:KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter' && name){
+            addUser()
+        }
+
     }
 
     const totalUsers = users.length // need to fix
@@ -42,7 +50,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
-            setErrorToNone = {setErrorToNone}
+            setErrorToNone={setErrorToNone}
+            onEnter={onEnter}
         />
     )
 }

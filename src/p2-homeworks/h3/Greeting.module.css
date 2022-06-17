@@ -19,6 +19,10 @@
     width: 60px;
 }
 
+.button:disabled{
+    color: #fbfffd;
+}
+
 .counter{
     margin-left: 10px;
 }
