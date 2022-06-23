@@ -1,8 +1,10 @@
 .blue {
-    border-bottom: 5px solid blue;
+    border-bottom: 1px solid blue;
 }
 
 .column {
+    height: 350px;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
     align-items: center;

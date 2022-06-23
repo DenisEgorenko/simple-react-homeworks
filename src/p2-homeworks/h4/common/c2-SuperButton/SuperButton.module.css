@@ -1,7 +1,25 @@
 .default {
+    border-radius: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    width: 90px;
+    height: 30px;
+    background-color: #3f51b5
+}
 
+.default:hover{
+    background-color: #002984
+}
+
+.default:disabled{
+    background-color: #e0e0e0
 }
 
 .red {
-    background: red;
+    background-color: #f44336
+}
+.red:hover {
+    background-color: #ba000d
 }

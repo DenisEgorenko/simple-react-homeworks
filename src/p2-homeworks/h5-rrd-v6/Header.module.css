@@ -1,0 +1,38 @@
+.headerBlock{
+    position: relative;
+    left: -260px;
+    margin: 5px 0 0 10px;
+    display: flex;
+    align-items: center;
+
+    transition: 700ms ease;
+}
+
+.headerButton{
+    width: 40px;
+    height: 40px;
+    background-color: #3f7eaa;
+    border-radius: 5px;
+}
+
+.headerBlock:hover {
+    transform: translateX(260px);
+}
+
+.headerButton img{
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+
+.navlink{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+
+
+.activeNavLink{
+    font-weight: bold;
+}

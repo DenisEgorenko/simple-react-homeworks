@@ -12,20 +12,23 @@ function HW4() {
         if (error) {
             alert('введите текст...')
         } else {
-            alert(text) // если нет ошибки показать текст
+            alert(text)
         }
     }
 
     const [checked, setChecked] = useState<boolean>(false)
+
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
 
     return (
         <div>
             <hr/>
-            homeworks 4
+            <span style={{marginLeft: '10px'}}>homeworks 4</span>
 
             <div className={s.column}>
+
                 <SuperInputText
+                    placeholder={"Введите текст"}
                     value={text}
                     onChangeText={setText}
                     onEnter={showAlert}
@@ -34,10 +37,13 @@ function HW4() {
                 />
 
                 <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
+                    placeholder={"Введите текст"}
+                    className={s.blue} // проверьте, работает ли смешивание классов
                 />
 
+
                 {/*----------------------------------------------------*/}
+
 
                 <SuperButton>
                     default
@@ -47,14 +53,16 @@ function HW4() {
                     red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
-                    delete {/*// название кнопки попадёт в children*/}
+                    delete
                 </SuperButton>
 
                 <SuperButton disabled>
                     disabled
                 </SuperButton>
 
+
                 {/*----------------------------------------------------*/}
+
 
                 <SuperCheckbox
                     checked={checked}
@@ -64,7 +72,12 @@ function HW4() {
                 </SuperCheckbox>
 
                 {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
+                <SuperCheckbox
+                    checked={checked}
+                    onChange={testOnChange}
+                />
+
+
             </div>
 
             <hr/>
