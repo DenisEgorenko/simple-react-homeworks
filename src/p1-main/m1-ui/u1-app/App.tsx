@@ -6,7 +6,7 @@ import HW5 from '../../../p2-homeworks/h5-rrd-v6/HW5';
 function App() {
     return (
         <div className={s.App}>
-            <div>react homeworks:</div>
+            <span style={{marginLeft: '10px'}}>react homeworks:</span>
 
             <div className={s.Messages}>
                 {/*<HW1/>*/}
