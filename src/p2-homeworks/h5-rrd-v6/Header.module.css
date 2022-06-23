@@ -1,9 +1,10 @@
 .headerBlock{
-    width: 300px;
-    position: relative;
-    left: -260px;
-    margin: 5px 0 0 10px;
     display: flex;
+    justify-content: space-between;
+    width: 350px;
+    position: relative;
+    left: -310px;
+    margin: 5px 0 0 10px;
     align-items: center;
 
     transition: 700ms ease;
@@ -17,7 +18,7 @@
 }
 
 .headerBlock:hover {
-    transform: translateX(260px);
+    transform: translateX(310px);
 }
 
 .headerButton img{
@@ -30,7 +31,6 @@
 .navlink{
     text-decoration: none;
     color: black;
-    margin-right: 20px;
 }
 
 
