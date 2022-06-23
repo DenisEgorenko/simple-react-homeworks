@@ -41,7 +41,7 @@ function HW2() {
     return (
         <div>
             <hr/>
-            homeworks 2
+            <span style={{marginLeft: '10px'}}>homeworks 2</span>
 
             {/*should work (должно работать)*/}
             <Affairs

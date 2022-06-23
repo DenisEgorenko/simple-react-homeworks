@@ -13,7 +13,7 @@ function HW1() {
     return (
         <div>
             <hr/>
-            homeworks 1
+            <span style={{marginLeft: '10px'}}>homeworks 1</span>
             <hr/>
             {/*should work (должно работать)*/}
             <div className={styles.messages}>

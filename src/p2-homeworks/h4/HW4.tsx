@@ -23,7 +23,7 @@ function HW4() {
     return (
         <div>
             <hr/>
-            homeworks 4
+            <span style={{marginLeft: '10px'}}>homeworks 4</span>
 
             <div className={s.column}>
 

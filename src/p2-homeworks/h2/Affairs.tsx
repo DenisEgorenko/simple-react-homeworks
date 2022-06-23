@@ -33,7 +33,7 @@ function Affairs(props: AffairsPropsType) {
     }
 
     return (
-        <div >
+        <div style={{marginLeft: '10px'}}>
 
             {mappedAffairs}
 

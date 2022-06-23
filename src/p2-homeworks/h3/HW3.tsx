@@ -21,7 +21,7 @@ function HW3() {
     return (
         <div>
             <hr/>
-            homeworks 3
+            <span style={{marginLeft: '10px'}}>homeworks 3</span>
 
             {/*should work (должно работать)*/}
             <GreetingContainer users={users} addUserCallback={addUserCallback}/>
@@ -29,7 +29,7 @@ function HW3() {
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeGreeting/>*/}
-            {users.map(user => <div>{user.name}  ${user._id}</div>)}
+            {/*{users.map(user => <div>{user.name}  ${user._id}</div>)}*/}
 
             <hr/>
         </div>

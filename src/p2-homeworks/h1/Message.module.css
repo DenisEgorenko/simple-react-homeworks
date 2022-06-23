@@ -1,13 +1,13 @@
 .messages{
-    background-color: #262626FF;
-    padding: 10px;
+    background-color: #ffffff;
+    padding: 5px;
 }
 
 .messageBlock {
     display: grid;
     width: 300px;
     grid-template-columns: auto auto;
-    margin: 20px;
+    margin: 20px 20px 20px 10px;
     align-items: end;
 }
 
@@ -41,7 +41,7 @@
     width: inherit;
     height: inherit;
     border-radius: 0 0 100% ;
-    background-color: #262626FF;
+    background-color: #ffffff;
 }
 
 .sidePeace{
@@ -50,7 +50,7 @@
     top: 0;
     width: inherit;
     height: inherit;
-    background-color: rgb(50, 71, 101);
+    background-color: #3f7fab;
 }
 
 .messageBody{
@@ -58,7 +58,7 @@
     grid-template-rows: 25px auto 20px;
     width: 300px;
     height: auto;
-    background-color: #324765;
+    background-color: #3f7fab;
     border-radius: 5px 5px 5px 0;
 
 }
@@ -67,7 +67,7 @@
     font-weight: bold;
     margin-top: 2px;
     margin-left: 12px;
-    color: #e2bcff;
+    color: #d2c0ff;
 }
 
 .messageBodyMessage{
@@ -79,5 +79,5 @@
     font-size: 13px;
     justify-self: right;
     margin-right: 12px;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.63);
 }
