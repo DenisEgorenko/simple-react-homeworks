@@ -1,0 +1,20 @@
+.default{
+
+}
+
+
+.inputBlock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.ButtonStyle{
+    margin: 10px;
+}
+
+.inputBlock img {
+    height: 15px;
+    margin-right: 5px;
+}

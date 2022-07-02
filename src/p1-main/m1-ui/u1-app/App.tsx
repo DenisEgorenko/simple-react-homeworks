@@ -9,10 +9,6 @@ function App() {
             <span style={{marginLeft: '10px'}}>react homeworks:</span>
 
             <div className={s.Messages}>
-                {/*<HW1/>*/}
-                {/*<HW2/>*/}
-                {/*<HW3/>*/}
-                {/*<HW4/>*/}
                 <HW5/>
             </div>
 
