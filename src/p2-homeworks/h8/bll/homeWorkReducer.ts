@@ -21,25 +21,17 @@ export const homeWorkReducer = (state: UserStateType, action: actionType): UserS
 
             if (action.payload === 'up') {
                 copyState.sort((a, b) => {
-                    if (a.name > b.name) {
-                        return 1
-                    }
-                    if (a.name < b.name) {
-                        return -1
-                    }
-                    return 0
+                    if (a.name > b.name) return 1
+                    else if (a.name < b.name) return -1
+                    else return 0
                 })
             }
 
             if (action.payload === 'down') {
                 copyState.sort((a, b) => {
-                    if (a.name < b.name) {
-                        return 1
-                    }
-                    if (a.name > b.name) {
-                        return -1
-                    }
-                    return 0
+                    if (a.name < b.name) return 1
+                    else if (a.name > b.name) return -1
+                    else return 0
                 })
             }
 
