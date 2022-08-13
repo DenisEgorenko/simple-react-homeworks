@@ -1,3 +1,12 @@
+.blockStyle{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
 .dark {
     background: dimgrey;
 }
@@ -19,5 +28,13 @@
 }
 
 .some-text {
-    color: darkslateblue;
+    color: #3d5f8b;
+}
+
+.custom {
+    background: #eeeeee;
+}
+
+.custom-text {
+    color: #8b58f3;
 }
